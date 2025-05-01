@@ -1,0 +1,40 @@
+
+%%%     Examples and exercises for basic prover commands
+%%%       (propositional formulas only)
+
+prop_basic: THEORY
+BEGIN
+
+p,q,r: bool           % Propositional constants
+
+
+%%%   Propositional Formulas   
+
+% Please use split and flatten, and their variants,
+% as appropriate.  You may also wish to try the 
+% utility commands like help, postpone, and undo.
+
+prop_0: LEMMA  ((p => q) AND p) => q
+
+prop_1: LEMMA  ((p AND q) AND r) => (p AND (q AND r))
+
+prop_2: LEMMA  NOT (p OR q) IFF (NOT p AND NOT q)
+
+prop_3: LEMMA  NOT (p AND q) IFF (NOT p OR NOT q)
+
+prop_4: LEMMA  (p => (q => r)) IFF (p AND q => r)
+
+prop_5: LEMMA  (p AND (q OR r)) IFF (p AND q) OR (p AND r)
+
+prop_6: LEMMA  (p OR (q AND r)) IFF (p OR q) AND (p OR r)
+
+prop_7: LEMMA  ((p => q) AND (p => r)) IFF (p => (q AND r))
+
+prop_8: LEMMA  ((p => q) => (p AND q)) IFF ((NOT p => q) AND (q => p))
+
+% Not a theorem:
+
+fools_lemma: FORMULA  ((p OR q) AND r) => (p AND (q AND r))
+
+
+END prop_basic
