@@ -1,0 +1,5 @@
+TCCs summary for theory pred_basic
+
+	fact_large_TCC1.................................................✅ proved              (0.356 s)
+
+Theory pred_basic totals: 1 formulas, 1 attempted, 1 succeeded (0.356 s)

@@ -1,0 +1,1604 @@
+{
+ "prop_basic.prop_0": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_0",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_0",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split -1)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_1": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(split 1)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "3",
+        "name": "(3)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "3",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_2": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_2",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_2",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split 3)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split -1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_3": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_3",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_3",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split 1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split -1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_4": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_4",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_4",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split -1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.3",
+            "name": "(1.3)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.3",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split -1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "2.3",
+            "name": "(2.3)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.3",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_5": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_5",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_5",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split 1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(split 2)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "1.2.1",
+                "name": "(1.2.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.2.1",
+                  "name": "(propax)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "1.2.2",
+                "name": "(1.2.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.2.2",
+                  "name": "(split -2)",
+                  "type": "proof-command",
+                  "rules": [
+                   {
+                    "branch": "1.2.2.1",
+                    "name": "(1.2.2.1)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "1.2.2.1",
+                      "name": "(propax)",
+                      "type": "proof-command",
+                      "rules": []
+                     }
+                    ]
+                   },
+                   {
+                    "branch": "1.2.2.2",
+                    "name": "(1.2.2.2)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "1.2.2.2",
+                      "name": "(propax)",
+                      "type": "proof-command",
+                      "rules": []
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split -1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(split 1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.1.1",
+                "name": "(2.1.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "2.1.2",
+                "name": "(2.1.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(split 1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.2.1",
+                "name": "(2.2.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "2.2.2",
+                "name": "(2.2.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_6": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_6",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_6",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split 1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "1.1.1",
+                "name": "(1.1.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.1.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "1.1.2",
+                "name": "(1.1.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.1.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "1.2.1",
+                "name": "(1.2.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.2.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "1.2.2",
+                "name": "(1.2.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.2.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split 2)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.1.1",
+                "name": "(2.1.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.1",
+                  "name": "(propax)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "2.1.2",
+                "name": "(2.1.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.2",
+                  "name": "(propax)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(split -2)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.2.1",
+                "name": "(2.2.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.1",
+                  "name": "(propax)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "2.2.2",
+                "name": "(2.2.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.2",
+                  "name": "(propax)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_7": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_7",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_7",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split -1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(split -2)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "1.1.1",
+                "name": "(1.1.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.1.1",
+                  "name": "(split 1)",
+                  "type": "proof-command",
+                  "rules": [
+                   {
+                    "branch": "1.1.1.1",
+                    "name": "(1.1.1.1)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "1.1.1.1",
+                      "name": "(propax)",
+                      "type": "proof-command",
+                      "rules": []
+                     }
+                    ]
+                   },
+                   {
+                    "branch": "1.1.1.2",
+                    "name": "(1.1.1.2)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "1.1.1.2",
+                      "name": "(propax)",
+                      "type": "proof-command",
+                      "rules": []
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ]
+               },
+               {
+                "branch": "1.1.2",
+                "name": "(1.1.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.1.2",
+                  "name": "(propax)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(propax)",
+              "type": "proof-command",
+              "rules": []
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split 1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.1.1",
+                "name": "(2.1.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "2.1.2",
+                "name": "(2.1.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.2.1",
+                "name": "(2.2.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "2.2.2",
+                "name": "(2.2.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "prop_basic.prop_8": [
+  {
+   "info": {
+    "theory": "prop_basic",
+    "formula": "prop_8",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "8c05fac7f1c040ff1a13cb84d160fb318446373860c0af6cfe6fef9eaed34f84"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "prop_8",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(split)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(split 1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "1.1",
+            "name": "(1.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.1",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "1.1.1",
+                "name": "(1.1.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.1.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "1.1.2",
+                "name": "(1.1.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.1.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "branch": "1.2",
+            "name": "(1.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "1.2",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "1.2.1",
+                "name": "(1.2.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.2.1",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "1.2.2",
+                "name": "(1.2.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "1.2.2",
+                  "name": "(flatten)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(flatten)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "2",
+          "name": "(split 1)",
+          "type": "proof-command",
+          "rules": [
+           {
+            "branch": "2.1",
+            "name": "(2.1)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.1",
+              "name": "(split -3)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.1.1",
+                "name": "(2.1.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.1",
+                  "name": "(split -2)",
+                  "type": "proof-command",
+                  "rules": [
+                   {
+                    "branch": "2.1.1.1",
+                    "name": "(2.1.1.1)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "2.1.1.1",
+                      "name": "(split -3)",
+                      "type": "proof-command",
+                      "rules": [
+                       {
+                        "branch": "2.1.1.1.1",
+                        "name": "(2.1.1.1.1)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.1.1.1.1",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       },
+                       {
+                        "branch": "2.1.1.1.2",
+                        "name": "(2.1.1.1.2)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.1.1.1.2",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       }
+                      ]
+                     }
+                    ]
+                   },
+                   {
+                    "branch": "2.1.1.2",
+                    "name": "(2.1.1.2)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "2.1.1.2",
+                      "name": "(propax)",
+                      "type": "proof-command",
+                      "rules": []
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ]
+               },
+               {
+                "branch": "2.1.2",
+                "name": "(2.1.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.1.2",
+                  "name": "(split -1)",
+                  "type": "proof-command",
+                  "rules": [
+                   {
+                    "branch": "2.1.2.1",
+                    "name": "(2.1.2.1)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "2.1.2.1",
+                      "name": "(split -2)",
+                      "type": "proof-command",
+                      "rules": [
+                       {
+                        "branch": "2.1.2.1.1",
+                        "name": "(2.1.2.1.1)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.1.2.1.1",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       },
+                       {
+                        "branch": "2.1.2.1.2",
+                        "name": "(2.1.2.1.2)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.1.2.1.2",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       }
+                      ]
+                     }
+                    ]
+                   },
+                   {
+                    "branch": "2.1.2.2",
+                    "name": "(2.1.2.2)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "2.1.2.2",
+                      "name": "(propax)",
+                      "type": "proof-command",
+                      "rules": []
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "branch": "2.2",
+            "name": "(2.2)",
+            "type": "proof-branch",
+            "rules": [
+             {
+              "branch": "2.2",
+              "name": "(split -1)",
+              "type": "proof-command",
+              "rules": [
+               {
+                "branch": "2.2.1",
+                "name": "(2.2.1)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.1",
+                  "name": "(propax)",
+                  "type": "proof-command",
+                  "rules": []
+                 }
+                ]
+               },
+               {
+                "branch": "2.2.2",
+                "name": "(2.2.2)",
+                "type": "proof-branch",
+                "rules": [
+                 {
+                  "branch": "2.2.2",
+                  "name": "(split -2)",
+                  "type": "proof-command",
+                  "rules": [
+                   {
+                    "branch": "2.2.2.1",
+                    "name": "(2.2.2.1)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "2.2.2.1",
+                      "name": "(split -3)",
+                      "type": "proof-command",
+                      "rules": [
+                       {
+                        "branch": "2.2.2.1.1",
+                        "name": "(2.2.2.1.1)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.2.2.1.1",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       },
+                       {
+                        "branch": "2.2.2.1.2",
+                        "name": "(2.2.2.1.2)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.2.2.1.2",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       }
+                      ]
+                     }
+                    ]
+                   },
+                   {
+                    "branch": "2.2.2.2",
+                    "name": "(2.2.2.2)",
+                    "type": "proof-branch",
+                    "rules": [
+                     {
+                      "branch": "2.2.2.2",
+                      "name": "(split -2)",
+                      "type": "proof-command",
+                      "rules": [
+                       {
+                        "branch": "2.2.2.2.1",
+                        "name": "(2.2.2.2.1)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.2.2.2.1",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       },
+                       {
+                        "branch": "2.2.2.2.2",
+                        "name": "(2.2.2.2.2)",
+                        "type": "proof-branch",
+                        "rules": [
+                         {
+                          "branch": "2.2.2.2.2",
+                          "name": "(propax)",
+                          "type": "proof-command",
+                          "rules": []
+                         }
+                        ]
+                       }
+                      ]
+                     }
+                    ]
+                   }
+                  ]
+                 }
+                ]
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

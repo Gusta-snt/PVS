@@ -1,0 +1,15 @@
+pred_basic.fact_large is UNPROVED.
+
+  fact_large depends on the following proved theorems:
+
+    pred_basic.fact_large_TCC1
+
+    pred_basic.factorial_TCC1
+
+    pred_basic.factorial_TCC2
+
+  fact_large depends on the following definitions:
+
+    pred_basic.factorial
+
+    reals.>=

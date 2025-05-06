@@ -26,6 +26,14 @@
   (quant_3-1 nil 3955127147
    ("" (flatten) (("" (skeep 1) (("" (inst 2 x) nil nil)) nil)) nil)
    ((arb nonempty-type-decl nil pred_basic nil)) shostak))
+ (quant_4 0
+  (quant_4-1 nil 3955128234
+   ("" (split)
+    (("1" (flatten) (("1" (skeep) (("1" (inst 2 x) nil nil)) nil)) nil)
+     ("2" (flatten) (("2" (skeep) (("2" (inst -1 x) nil nil)) nil))
+      nil))
+    nil)
+   ((arb nonempty-type-decl nil pred_basic nil)) shostak))
  (quant_5 0
   (quant_5-1 nil 3955127352
    ("" (split)
@@ -35,19 +43,185 @@
     nil)
    ((arb nonempty-type-decl nil pred_basic nil)) shostak))
  (quant_6 0
-  (quant_6-1 nil 3955124463 ("" (postpone) nil nil) nil shostak))
+  (quant_6-1 nil 3955124463
+   ("" (split)
+    (("1" (flatten)
+      (("1" (skeep)
+        (("1" (split 1)
+          (("1" (inst -1 x) nil nil) ("2" (inst -2 x) nil nil)) nil))
+        nil))
+      nil)
+     ("2" (flatten)
+      (("2" (split 1)
+        (("1" (skeep) (("1" (inst -1 x) (("1" (flatten) nil nil)) nil))
+          nil)
+         ("2" (skeep) (("2" (inst -1 x) (("2" (flatten) nil nil)) nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((arb nonempty-type-decl nil pred_basic nil)) shostak))
+ (quant_7 0
+  (quant_7-1 nil 3955297390
+   ("" (split)
+    (("1" (flatten)
+      (("1" (split)
+        (("1" (skeep) (("1" (inst 1 x) (("1" (flatten) nil nil)) nil))
+          nil)
+         ("2" (skeep) (("2" (inst 1 x) (("2" (flatten) nil nil)) nil))
+          nil))
+        nil))
+      nil)
+     ("2" (flatten)
+      (("2" (skeep)
+        (("2" (split)
+          (("1" (inst 1 x) nil nil) ("2" (inst 2 x) nil nil)) nil))
+        nil))
+      nil))
+    nil)
+   ((arb nonempty-type-decl nil pred_basic nil)) shostak))
+ (distrib 0
+          (distrib-1 nil 3955472675 ("" (assert) nil nil)
+           ((int_times_int_is_int application-judgement "int" integers
+             nil))
+           shostak))
  (factorial_TCC1 0
-  (factorial_TCC1-1 nil 3955123374 ("" (subtype-tcc) nil nil) nil nil
-   (factorial subtype "(number_fields.-)(pred_basic.N, 1)" "nat")))
+  (factorial_TCC1-1 nil 3955123374 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil (factorial subtype "(number_fields.-)(pred_basic.N, 1)" "nat")))
  (factorial_TCC2 0
   (factorial_TCC2-1 nil 3955123374 ("" (termination-tcc) nil nil) nil
    nil
    (factorial termination
     "pred_basic.factorial((number_fields.-)(pred_basic.N, 1))" "nil")))
+ (fact_0 0
+  (fact_0-1 nil 3955473071
+   ("" (expand "factorial") (("" (propax) nil nil)) nil)
+   ((factorial def-decl "nat" pred_basic nil)) shostak))
+ (fact_3 0
+  (fact_3-1 nil 3955473374
+   ("" (expand "factorial")
+    (("" (expand "factorial")
+      (("" (expand "factorial")
+        (("" (expand "factorial") (("" (propax) nil nil)) nil)) nil))
+      nil))
+    nil)
+   ((factorial def-decl "nat" pred_basic nil)) shostak))
+ (fact_13 0
+  (fact_13-1 nil 3955473453 ("" (grind) nil nil)
+   ((nnint_times_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (even_times_int_is_even application-judgement "even_int" integers
+     nil)
+    (factorial def-decl "nat" pred_basic nil))
+   shostak))
  (fact_pos_TCC1 0
-  (fact_pos_TCC1-1 nil 3955123374 ("" (subtype-tcc) nil nil) nil nil
-   (fact_pos subtype "(number_fields.-)(pred_basic.N, 1)" "nat")))
+  (fact_pos_TCC1-1 nil 3955123374 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil (fact_pos subtype "(number_fields.-)(pred_basic.N, 1)" "nat")))
+ (fact_pos 0
+  (fact_pos-1 nil 3955473484
+   ("" (skeep)
+    (("" (expand "factorial" 1 1)
+      (("" (lift-if)
+        (("" (split)
+          (("1" (flatten) (("1" (assert) nil nil)) nil)
+           ("2" (propax) nil nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   ((factorial def-decl "nat" pred_basic nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (nnint_times_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil))
+   shostak))
  (fact_large_TCC1 0
-  (fact_large_TCC1-1 nil 3955123374 ("" (subtype-tcc) nil nil) nil nil
-   (fact_large subtype "(number_fields.-)(pred_basic.N, 3)" "nat"))))
+  (fact_large_TCC1-1 nil 3955123374 ("" (subtype-tcc) nil nil)
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (>= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   nil
+   (fact_large subtype "(number_fields.-)(pred_basic.N, 3)" "nat")))
+ (fact_large 0
+  (fact_large-1 nil 3955473671 ("" (postpone) nil nil)
+   ((real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (int_times_int_is_int application-judgement "int" integers nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (factorial def-decl "nat" pred_basic nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (>= const-decl "bool" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (nnint_times_nnint_is_nnint application-judgement "nonneg_int"
+     integers nil)
+    (even_times_int_is_even application-judgement "even_int" integers
+     nil)
+    (even_minus_even_is_even application-judgement "even_int" integers
+     nil)
+    (int_minus_int_is_int application-judgement "int" integers nil))
+   shostak)))
 

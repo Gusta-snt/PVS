@@ -38,9 +38,11 @@ quant_4: LEMMA  NOT (FORALL x: P(x)) IFF (EXISTS x: NOT P(x))
 % @QED quant_5 proved by gusta on Thu, 01 May 2025 22:41:55 GMT
 quant_5: LEMMA  NOT (EXISTS x: P(x)) IFF (FORALL x: NOT P(x))
 
+% @QED quant_6 proved by gusta on Sat, 03 May 2025 21:38:06 GMT
 quant_6: LEMMA  (FORALL x: P(x)) AND (FORALL x: Q(x))
                   IFF (FORALL x: P(x) AND Q(x))
 
+% @QED quant_7 proved by gusta on Sat, 03 May 2025 21:46:22 GMT
 quant_7: LEMMA  (EXISTS x: P(x)) OR (EXISTS x: Q(x))
                   IFF (EXISTS x: P(x) OR Q(x))
 
@@ -49,6 +51,7 @@ l,m,n:  VAR int
 
 % Try a decision procedure here.
 
+% @QED distrib proved by gusta on Mon, 05 May 2025 22:24:39 GMT
 distrib: LEMMA  l * (m + n) = (l * m) + (l * n)
 
 % A defintition of factorial for some basic proving.
@@ -64,21 +67,26 @@ factorial(N): RECURSIVE nat =
 
 % Try expanding the definition here, or use a decision procedure
 
+% @QED fact_0 proved by gusta on Mon, 05 May 2025 22:31:53 GMT
 fact_0: LEMMA factorial(0) = 1
 
+% @QED fact_3 proved by gusta on Mon, 05 May 2025 22:36:18 GMT
 fact_3: LEMMA factorial(3) = 6
 
+% @QED fact_13 proved by gusta on Mon, 05 May 2025 22:37:36 GMT
 fact_13: LEMMA factorial(13) = 6227020800
 
 % You'll need to expand factorial carefully.
 % Be careful, "grind" will run away...  
 
+% @QED fact_pos proved by gusta on Mon, 05 May 2025 22:40:18 GMT
 fact_pos: LEMMA 
 N>=1 IMPLIES 
 factorial(N) = N*factorial(N-1)
 
 % Use the previous lemma to prove this. 
 
+% @QED fact_large proved by gusta on Mon, 05 May 2025 22:41:20 GMT
 fact_large: LEMMA 
 N >= 3 IMPLIES
 factorial(N) = N*(N-1)*(N-2)*factorial(N-3)

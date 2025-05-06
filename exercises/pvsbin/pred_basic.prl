@@ -1,0 +1,9 @@
+%-------------------------------------------
+% @formula: fact_large 
+% @theory: pred_basic
+% @pvsfile: pred_basic.pvs
+% @status: ❄️ unchecked
+%-------------------------------------------
+fact_large : PROOF
+(then (rewrite "factorial")(grind))
+QED fact_large
