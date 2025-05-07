@@ -14,6 +14,8 @@ This repository is dedicated to storing and developing projects using [PVS (Prot
 
 To use or contribute to this project, you need to have PVS installed. You can download the latest version and installation instructions from the official site: [http://pvs.csl.sri.com/](http://pvs.csl.sri.com/).
 
+You can also use the PVS extension from VSCode. Just search it and install, it will do everything for you.
+
 ### Cloning the Repository
 
 ```bash
