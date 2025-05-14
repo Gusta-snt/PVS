@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Exercise Set 2: Real Number Proving
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+realproving : THEORY
+BEGIN
+
+  googol     : MACRO real = 10^100
+  googolplex : MACRO real = 10^googol
+
+  %
+  % Exercise 1
+  %
+
+  % @QED googolplex_gt_googol2 proved by gusta on Sun, 11 May 2025 18:32:52 GMT
+  googolplex_gt_googol2 : LEMMA
+    googolplex > googol * googol
+
+
+  %
+  % Exercise 2
+  %
+
+  %% Prove that y*(1-x)*(1-x) <= 0 if y <= 0
+  % @QED simplelt0 proved by gusta on Sun, 11 May 2025 19:25:11 GMT
+  simplelt0 : LEMMA
+    FORALL (x:real,y:real): y <= 0 IMPLIES y*(1-x)*(1-x) <= 0
+
+  %
+  % Exercise 3
+  %
+
+  IMPORTING reals@sqrt
+
+  % @QED simplesqrt1 proved by gusta on Sun, 11 May 2025 19:31:01 GMT
+  simplesqrt1 : LEMMA
+    FORALL (nnx:nnreal) : 
+      nnx <= 1 IMPLIES
+        sqrt(1-nnx) <= 1
+
+  %
+  % Exercise 4
+  %
+
+  x,y : VAR real
+  nx  : VAR negreal
+  px  : VAR posreal
+
+  % @QED p1 proved by gusta on Sun, 11 May 2025 19:35:00 GMT
+  p1 : LEMMA
+   px+nx <= 0
+   IMPLIES   
+     1/px+1/nx >= px*nx
+
+  % @QED p2 proved by gusta on Sun, 11 May 2025 20:44:12 GMT
+  p2 : LEMMA
+    (px*px - 1)/(px+1) + 1 = px
+
+  % @QED p3 proved by gusta on Sun, 11 May 2025 21:16:57 GMT
+  p3 : LEMMA
+    x >= 20 AND
+    y >= 10 IMPLIES
+    x*y - 10*x - 20*y + 200 >= 0 
+
+END realproving

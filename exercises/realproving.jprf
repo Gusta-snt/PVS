@@ -1,0 +1,281 @@
+{
+ "realproving.googolplex_gt_googol2": [
+  {
+   "info": {
+    "theory": "realproving",
+    "formula": "googolplex_gt_googol2",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "68e7e361698467e3239ef9cba1aaa107432174b694a9db947c54ce1043b2fa0b"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "googolplex_gt_googol2",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(lemma expt_plus)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst -1 100 100 10)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(replace -1 1 :dir rl)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(lemma both_sides_expt_gt1_gt)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(inst -1 10 10^100 200)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(flatten)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(grind)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "realproving.simplelt0": [
+  {
+   "info": {
+    "theory": "realproving",
+    "formula": "simplelt0",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "68e7e361698467e3239ef9cba1aaa107432174b694a9db947c54ce1043b2fa0b"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "simplelt0",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skeep)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(grind-reals :dontdistrib 1)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "realproving.simplesqrt1": [
+  {
+   "info": {
+    "theory": "realproving",
+    "formula": "simplesqrt1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "68e7e361698467e3239ef9cba1aaa107432174b694a9db947c54ce1043b2fa0b"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "simplesqrt1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skeep)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(mult-ineq 1 1)",
+      "type": "proof-command",
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "realproving.p1": [
+  {
+   "info": {
+    "theory": "realproving",
+    "formula": "p1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "68e7e361698467e3239ef9cba1aaa107432174b694a9db947c54ce1043b2fa0b"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "p1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skeep)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(field 1)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "realproving.p2": [
+  {
+   "info": {
+    "theory": "realproving",
+    "formula": "p2",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "68e7e361698467e3239ef9cba1aaa107432174b694a9db947c54ce1043b2fa0b"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "p2",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skeep)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(move-terms 1 l 2)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(cross-mult)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "realproving.p3": [
+  {
+   "info": {
+    "theory": "realproving",
+    "formula": "p3",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "68e7e361698467e3239ef9cba1aaa107432174b694a9db947c54ce1043b2fa0b"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "p3",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skeep)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(move-terms -1 r 1)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(move-terms -2 r 1)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(mult-ineq -1 -2)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ]
+}
