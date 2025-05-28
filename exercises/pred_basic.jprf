@@ -775,48 +775,9 @@
      },
      {
       "branch": "",
-      "name": "(lift-if)",
+      "name": "(assert)",
       "type": "proof-command",
       "rules": []
-     },
-     {
-      "branch": "",
-      "name": "(split)",
-      "type": "proof-command",
-      "rules": [
-       {
-        "branch": "1",
-        "name": "(1)",
-        "type": "proof-branch",
-        "rules": [
-         {
-          "branch": "1",
-          "name": "(flatten)",
-          "type": "proof-command",
-          "rules": []
-         },
-         {
-          "branch": "1",
-          "name": "(assert)",
-          "type": "proof-command",
-          "rules": []
-         }
-        ]
-       },
-       {
-        "branch": "2",
-        "name": "(2)",
-        "type": "proof-branch",
-        "rules": [
-         {
-          "branch": "2",
-          "name": "(propax)",
-          "type": "proof-command",
-          "rules": []
-         }
-        ]
-       }
-      ]
      }
     ]
    }
@@ -857,39 +818,60 @@
      },
      {
       "branch": "",
-      "name": "(assert)",
+      "name": "(split -1)",
       "type": "proof-command",
-      "rules": []
-     },
-     {
-      "branch": "",
-      "name": "(replace -1)",
-      "type": "proof-command",
-      "rules": []
-     },
-     {
-      "branch": "",
-      "name": "(rewrite \"fact_pos\" :target-fnums 1)",
-      "type": "proof-command",
-      "rules": []
-     },
-     {
-      "branch": "",
-      "name": "(expand factorial 1 1)",
-      "type": "proof-command",
-      "rules": []
-     },
-     {
-      "branch": "",
-      "name": "(rewrite \"fact_pos\" 1 :target-fnums 1)",
-      "type": "proof-command",
-      "rules": []
-     },
-     {
-      "branch": "",
-      "name": "(assert)",
-      "type": "proof-command",
-      "rules": []
+      "rules": [
+       {
+        "branch": "1",
+        "name": "(1)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "1",
+          "name": "(replaces -1)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(expand \"factorial\" 1 1)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(expand \"factorial\" 1 (1 2))",
+          "type": "proof-command",
+          "rules": []
+         },
+         {
+          "branch": "1",
+          "name": "(propax)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       },
+       {
+        "branch": "2",
+        "name": "(2)",
+        "type": "proof-branch",
+        "rules": [
+         {
+          "branch": "2",
+          "name": "(assert)",
+          "type": "proof-command",
+          "rules": []
+         }
+        ]
+       }
+      ]
      }
     ]
    }

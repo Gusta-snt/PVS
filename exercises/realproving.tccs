@@ -4,7 +4,7 @@ realproving_TCCS: THEORY BEGIN
 
 	% Subtype TCC generated (at line 41, column 13) for  1 - nnx
 	% expected type  nonneg_real
-	  % untried
+	  % proved
 	simplesqrt1_TCC1: OBLIGATION
 	FORALL (nnx: nnreal): nnx <= 1 IMPLIES 1 - nnx >= 0
 

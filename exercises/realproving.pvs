@@ -51,7 +51,7 @@ BEGIN
   % @QED p1 proved by gusta on Sun, 11 May 2025 19:35:00 GMT
   p1 : LEMMA
    px+nx <= 0
-   IMPLIES   
+   IMPLIES
      1/px+1/nx >= px*nx
 
   % @QED p2 proved by gusta on Sun, 11 May 2025 20:44:12 GMT

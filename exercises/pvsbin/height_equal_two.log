@@ -1,0 +1,15 @@
+binary_tree_nat.height_equal_two is UNPROVED.
+
+  height_equal_two depends on the following definitions:
+
+    binary_tree_nat.ex1
+
+    binary_tree_nat.height
+
+    BinaryTreeNat_adt.<<
+
+    orders.strict_well_founded?
+
+    real_defs.max
+
+    reals.>=

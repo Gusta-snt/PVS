@@ -1,0 +1,6 @@
+TCCs summary for theory binary_tree_nat
+
+	height_TCC1.....................................................✅ proved              (0.36 s)
+	height_TCC2.....................................................✅ proved              (0.319 s)
+
+Theory binary_tree_nat totals: 2 formulas, 2 attempted, 2 succeeded (0.679 s)

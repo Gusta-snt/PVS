@@ -1,0 +1,169 @@
+%%% ADT file generated from BinaryTreeNat
+
+BinaryTreeNat_adt: THEORY
+ BEGIN
+
+  BinaryTreeNat: TYPE
+
+  nil?, bin?: [BinaryTreeNat -> boolean]
+
+  left: [(bin?) -> BinaryTreeNat]
+
+  elem: [(bin?) -> nat]
+
+  right: [(bin?) -> BinaryTreeNat]
+
+  nil: (nil?)
+
+  bin: [[BinaryTreeNat, nat, BinaryTreeNat] -> (bin?)]
+
+  BinaryTreeNat_ord: [BinaryTreeNat -> upto(1)]
+
+  BinaryTreeNat_ord_defaxiom: AXIOM
+    BinaryTreeNat_ord(nil) = 0 AND
+     FORALL (left: BinaryTreeNat, elem: nat, right: BinaryTreeNat):
+       BinaryTreeNat_ord(bin(left, elem, right)) = 1;
+
+  ord(x: BinaryTreeNat): upto(1) =
+      CASES x OF nil: 0, bin(bin1_var, bin2_var, bin3_var): 1 ENDCASES
+
+  BinaryTreeNat_nil_extensionality: AXIOM
+    FORALL (nil?_var: (nil?), nil?_var2: (nil?)): nil?_var = nil?_var2;
+
+  BinaryTreeNat_bin_extensionality: AXIOM
+    FORALL (bin?_var: (bin?), bin?_var2: (bin?)):
+      left(bin?_var) = left(bin?_var2) AND
+       elem(bin?_var) = elem(bin?_var2) AND
+        right(bin?_var) = right(bin?_var2)
+       IMPLIES bin?_var = bin?_var2;
+
+  BinaryTreeNat_bin_eta: AXIOM
+    FORALL (bin?_var: (bin?)):
+      bin(left(bin?_var), elem(bin?_var), right(bin?_var)) = bin?_var;
+
+  BinaryTreeNat_left_bin: AXIOM
+    FORALL (bin1_var: BinaryTreeNat, bin2_var: nat,
+            bin3_var: BinaryTreeNat):
+      left(bin(bin1_var, bin2_var, bin3_var)) = bin1_var;
+
+  BinaryTreeNat_elem_bin: AXIOM
+    FORALL (bin1_var: BinaryTreeNat, bin2_var: nat,
+            bin3_var: BinaryTreeNat):
+      elem(bin(bin1_var, bin2_var, bin3_var)) = bin2_var;
+
+  BinaryTreeNat_right_bin: AXIOM
+    FORALL (bin1_var: BinaryTreeNat, bin2_var: nat,
+            bin3_var: BinaryTreeNat):
+      right(bin(bin1_var, bin2_var, bin3_var)) = bin3_var;
+
+  BinaryTreeNat_inclusive: AXIOM
+    FORALL (BinaryTreeNat_var: BinaryTreeNat):
+      nil?(BinaryTreeNat_var) OR bin?(BinaryTreeNat_var);
+
+  BinaryTreeNat_induction: AXIOM
+    FORALL (p: [BinaryTreeNat -> boolean]):
+      (p(nil) AND
+        FORALL (bin1_var: BinaryTreeNat, bin2_var: nat,
+                bin3_var: BinaryTreeNat):
+          p(bin1_var) AND p(bin3_var) IMPLIES
+           p(bin(bin1_var, bin2_var, bin3_var)))
+       IMPLIES
+       FORALL (BinaryTreeNat_var: BinaryTreeNat): p(BinaryTreeNat_var);
+
+  subterm(x: BinaryTreeNat, y: BinaryTreeNat):  boolean =
+      x = y OR
+       CASES y
+         OF nil: FALSE,
+            bin(bin1_var, bin2_var, bin3_var):
+              subterm(x, bin1_var) OR subterm(x, bin3_var)
+         ENDCASES;
+
+  <<:  (strict_well_founded?[BinaryTreeNat]) =
+      LAMBDA (x, y: BinaryTreeNat):
+        CASES y
+          OF nil: FALSE,
+             bin(bin1_var, bin2_var, bin3_var):
+               (x = bin1_var OR x << bin1_var) OR
+                (x = bin3_var OR x << bin3_var)
+          ENDCASES;
+
+  BinaryTreeNat_well_founded: AXIOM strict_well_founded?[BinaryTreeNat](<<);
+
+  reduce_nat(nil?_fun: nat, bin?_fun: [[nat, nat, nat] -> nat]):
+        [BinaryTreeNat -> nat] =
+      LAMBDA (BinaryTreeNat_adtvar: BinaryTreeNat):
+        LET red: [BinaryTreeNat -> nat] = reduce_nat(nil?_fun, bin?_fun) IN
+          CASES BinaryTreeNat_adtvar
+            OF nil: nil?_fun,
+               bin(bin1_var, bin2_var, bin3_var):
+                 bin?_fun(red(bin1_var), bin2_var, red(bin3_var))
+            ENDCASES;
+
+  REDUCE_nat(nil?_fun: [BinaryTreeNat -> nat],
+             bin?_fun: [[nat, nat, nat, BinaryTreeNat] -> nat]):
+        [BinaryTreeNat -> nat] =
+      LAMBDA (BinaryTreeNat_adtvar: BinaryTreeNat):
+        LET red: [BinaryTreeNat -> nat] = REDUCE_nat(nil?_fun, bin?_fun) IN
+          CASES BinaryTreeNat_adtvar
+            OF nil: nil?_fun(BinaryTreeNat_adtvar),
+               bin(bin1_var, bin2_var, bin3_var):
+                 bin?_fun(red(bin1_var), bin2_var, red(bin3_var),
+                          BinaryTreeNat_adtvar)
+            ENDCASES;
+
+  reduce_ordinal(nil?_fun: ordinal,
+                 bin?_fun: [[ordinal, nat, ordinal] -> ordinal]):
+        [BinaryTreeNat -> ordinal] =
+      LAMBDA (BinaryTreeNat_adtvar: BinaryTreeNat):
+        LET red: [BinaryTreeNat -> ordinal] =
+              reduce_ordinal(nil?_fun, bin?_fun)
+          IN
+          CASES BinaryTreeNat_adtvar
+            OF nil: nil?_fun,
+               bin(bin1_var, bin2_var, bin3_var):
+                 bin?_fun(red(bin1_var), bin2_var, red(bin3_var))
+            ENDCASES;
+
+  REDUCE_ordinal(nil?_fun: [BinaryTreeNat -> ordinal],
+                 bin?_fun:
+                   [[ordinal, nat, ordinal, BinaryTreeNat] -> ordinal]):
+        [BinaryTreeNat -> ordinal] =
+      LAMBDA (BinaryTreeNat_adtvar: BinaryTreeNat):
+        LET red: [BinaryTreeNat -> ordinal] =
+              REDUCE_ordinal(nil?_fun, bin?_fun)
+          IN
+          CASES BinaryTreeNat_adtvar
+            OF nil: nil?_fun(BinaryTreeNat_adtvar),
+               bin(bin1_var, bin2_var, bin3_var):
+                 bin?_fun(red(bin1_var), bin2_var, red(bin3_var),
+                          BinaryTreeNat_adtvar)
+            ENDCASES;
+ END BinaryTreeNat_adt
+
+BinaryTreeNat_adt_reduce[range: TYPE]: THEORY
+ BEGIN
+
+  IMPORTING BinaryTreeNat_adt
+
+  reduce(nil?_fun: range, bin?_fun: [[range, nat, range] -> range]):
+        [BinaryTreeNat -> range] =
+      LAMBDA (BinaryTreeNat_adtvar: BinaryTreeNat):
+        LET red: [BinaryTreeNat -> range] = reduce(nil?_fun, bin?_fun) IN
+          CASES BinaryTreeNat_adtvar
+            OF nil: nil?_fun,
+               bin(bin1_var, bin2_var, bin3_var):
+                 bin?_fun(red(bin1_var), bin2_var, red(bin3_var))
+            ENDCASES;
+
+  REDUCE(nil?_fun: [BinaryTreeNat -> range],
+         bin?_fun: [[range, nat, range, BinaryTreeNat] -> range]):
+        [BinaryTreeNat -> range] =
+      LAMBDA (BinaryTreeNat_adtvar: BinaryTreeNat):
+        LET red: [BinaryTreeNat -> range] = REDUCE(nil?_fun, bin?_fun) IN
+          CASES BinaryTreeNat_adtvar
+            OF nil: nil?_fun(BinaryTreeNat_adtvar),
+               bin(bin1_var, bin2_var, bin3_var):
+                 bin?_fun(red(bin1_var), bin2_var, red(bin3_var),
+                          BinaryTreeNat_adtvar)
+            ENDCASES;
+ END BinaryTreeNat_adt_reduce

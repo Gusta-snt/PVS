@@ -58,7 +58,7 @@
      },
      {
       "branch": "",
-      "name": "(assert)",
+      "name": "(hide-all-but (-2 1))",
       "type": "proof-command",
       "rules": []
      },
@@ -265,6 +265,43 @@
      {
       "branch": "",
       "name": "(mult-ineq -1 -2)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(assert)",
+      "type": "proof-command",
+      "rules": []
+     }
+    ]
+   }
+  }
+ ],
+ "realproving.simplesqrt1_TCC1": [
+  {
+   "info": {
+    "theory": "realproving",
+    "formula": "simplesqrt1_TCC1",
+    "status": "proved",
+    "prover": "PVS 7.1.0 (Allegro CL Enterprise Edition)",
+    "shasum": "68e7e361698467e3239ef9cba1aaa107432174b694a9db947c54ce1043b2fa0b"
+   },
+   "origin": ".prf",
+   "proofTree": {
+    "branch": "",
+    "name": "simplesqrt1_TCC1",
+    "type": "root",
+    "rules": [
+     {
+      "branch": "",
+      "name": "(skeep)",
+      "type": "proof-command",
+      "rules": []
+     },
+     {
+      "branch": "",
+      "name": "(move-terms 1 l 1)",
       "type": "proof-command",
       "rules": []
      },
